@@ -26,6 +26,7 @@ type LaunchSpec struct {
 	Labels             []*Label            `json:"labels,omitempty"`
 	Taints             []*Taint            `json:"taints,omitempty"`
 	AutoScale          *AutoScale          `json:"autoScale,omitempty"`
+	Tags               []*Tag              `json:"tags,omitempty"`
 
 	// Read-only fields.
 	CreatedAt *time.Time `json:"createdAt,omitempty"`

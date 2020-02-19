@@ -23,6 +23,7 @@ type ECSLaunchSpec struct {
 	IAMInstanceProfile *ECSIAMInstanceProfile `json:"iamInstanceProfile,omitempty"`
 	Attributes         []*ECSAttribute        `json:"attributes,omitempty"`
 	AutoScale          *ECSAutoScale          `json:"autoScale,omitempty"`
+	Tags               []*Tag                 `json:"tags,omitempty"`
 
 	// Read-only fields.
 	CreatedAt *time.Time `json:"createdAt,omitempty"`
